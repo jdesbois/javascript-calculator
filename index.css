@@ -1,0 +1,29 @@
+
+#calculator {
+  width: 350px;
+  background-color: grey;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#buttons button {
+  width: 37px;
+  height: 37px;
+  margin: 15px auto;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 25px
+}
+
+#lcd {
+  width: 300px;
+  height:100px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 5px;
+  text-align: right;
+}
+#history {
+  opacity: 0.5;
+}
