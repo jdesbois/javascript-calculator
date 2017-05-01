@@ -1,16 +1,42 @@
 var entry = '';
 var log = '';
-var ac = '';
+var current = '';
 
-var buttons = document.getElementsByTagName('button');
+
 var input = document.getElementById('input');
-var logText = document.getElementById('history');
+var sumHistory = document.getElementById('history');
+var buttons = document.getElementsByTagName('button');
 
-for (var i=0; i < buttons.length; i++) {
-    buttons[i].onclick = function() {
-        entry = this.value;
-        log += this.value;
-        input.innerHTML = entry;
-        logText.innerHTML = log;
+//RESET FUNCTION
+function allClear() {
+    log ="";
+    entry = 0;
+    current = 0;
+    sumHistory.innerHTML = log;
+    input.innerHTML = entry;   
+}
+function evaluate() {
+    log = eval(log);
+    entry = eval(log);
+    input.innerHTML = entry;
+    sumHistory.innerHTML = log;
+}
+
+
+//TEST BUTTONS
+for (var i=0; i<buttons.length; i++) {
+  buttons[i].addEventListener('click', function(button){  
+
+    if (this.value == "=") {
+        return evaluate();
     }
+    if (this.value == "AC") {
+       return allClear();
+    }
+           
+            log += this.value;
+            entry = this.value;
+            input.innerHTML = entry;
+            sumHistory.innerHTML = log;
+        })
 }
