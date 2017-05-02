@@ -37,9 +37,9 @@ for (var i=0; i<buttons.length; i++) {
     }
     //IF not number stops adding to entry else adds to entry
     if (!(Number.isInteger(Number(this.value)))) {
-        entry = this.value;
+        entry = "";
         log += this.value;
-        input.innerHTML = entry;
+        // input.innerHTML = entry; NO LONGER NEEDED.
         sumHistory.innerHTML = log;
     } else {
         entry += this.value;

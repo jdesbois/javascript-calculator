@@ -15,7 +15,7 @@ body {
 #lcd {
   width: 85%;
   height: 65px;
-  margin: 0 auto;
+  margin: 15px auto;
   font-family: VT323;
   border: 2px solid #b4b39d;
   border-radius: 6px;
@@ -33,7 +33,6 @@ body {
   font-size: 14px;
 }
 
-
 #buttons button {
   width: 50px;
   height: 40px;
@@ -42,25 +41,33 @@ body {
   border-radius: 8px;
   border: none;
   box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
-
+  color: #fff;
+  background-color: #3E3E3E;
+  font-size: 16px;
 }
+#buttons button:focus {
+  outline: none;
+}
+
 #buttons {
   height: auto;
-  margin-top: 15px;
+  margin-top: 40px;
   margin-left: 15px;
   width: 280px;
-  font-size: 16px;
   font-weight: bold;
   display:inline-block;
-  color: #fff;
 }
 #equalsButton {
-  height: 100px !important;
+  width: 115px !important;
 }
 #zeroButton {
-  width: 100px !important;
+  width: 115px !important;
 }
-.invisible {
-  display: none;
+
+#allClear {
+  background-color: #A72D45 !important;
+}
+#clearEntry {
+  background-color: #A72D45 !important;
 }
 
