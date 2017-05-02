@@ -9,8 +9,8 @@ var buttons = document.getElementsByTagName('button');
 
 //RESET FUNCTION
 function allClear() {
-    log ="";
-    entry = 0;
+    log = "";
+    entry = "";
     current = 0;
     sumHistory.innerHTML = log;
     input.innerHTML = entry;   
@@ -23,11 +23,10 @@ function evaluate() {
     sumHistory.innerHTML = log;
 }
 
-
 //BUTTONS LOOP
 for (var i=0; i<buttons.length; i++) {
 //ADDING CLICK LISTENER
-  buttons[i].addEventListener('click', function(button){  
+  buttons[i].addEventListener('click', function(button){ 
     //IF EQUALS RUN EVALUATE FUNCTION
     if (this.value == "=") {
         return evaluate();
@@ -36,10 +35,19 @@ for (var i=0; i<buttons.length; i++) {
     if (this.value == "AC") {
        return allClear();
     }
-         //TAKE VALUES OF BUTTONS AND ADD TO DOM AND STRINGS  
-            log += this.value;
-            entry = this.value;
-            input.innerHTML = entry;
-            sumHistory.innerHTML = log;
-        })
+    //IF not number stops adding to entry else adds to entry
+    if (!(Number.isInteger(Number(this.value)))) {
+        entry = this.value;
+        log += this.value;
+        input.innerHTML = entry;
+        sumHistory.innerHTML = log;
+    } else {
+        entry += this.value;
+        log += this.value;
+        input.innerHTML = entry;
+        sumHistory.innerHTML = log;
+    }
+    })
 }
+
+

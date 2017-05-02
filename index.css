@@ -1,33 +1,66 @@
-
+body {
+  background-color: #818181;
+}
 #calculator {
-  width: 280px;
-  background-color: grey;
-  margin: 0 auto;
-  padding: 10px;
+  height: 410px;
+  width: 300px;
+  background-color: #efecf3;
+  margin-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5px;
+  border-radius: 20px;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
 }
-
-#buttons button {
-  width: 37px;
-  height: 37px;
-  margin: 15px auto;
-  text-align: center;
-  border-radius: 10px;
-  font-weight: bold;
-  padding:25px
-}
-#buttons {
-  margin: auto;
-  width: 230px;
-}
-
 #lcd {
-  width: 250px;
-  height:100px;
+  width: 85%;
+  height: 65px;
   margin: 0 auto;
-  background-color: white;
-  padding: 5px;
+  font-family: VT323;
+  border: 2px solid #b4b39d;
+  border-radius: 6px;
+  background-color: #c3c2ab;
   text-align: right;
 }
-#history {
-  opacity: 0.5;
+#input {
+  margin: 0 10px 0 0;
+  font-size: 35px;
 }
+#history {
+  height:10px;
+  margin-right: 14px;
+  color: #8b8b7b;
+  font-size: 14px;
+}
+
+
+#buttons button {
+  width: 50px;
+  height: 40px;
+  margin: 0 4px 10px 8px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+
+}
+#buttons {
+  height: auto;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 280px;
+  font-size: 16px;
+  font-weight: bold;
+  display:inline-block;
+  color: #fff;
+}
+#equalsButton {
+  height: 100px !important;
+}
+#zeroButton {
+  width: 100px !important;
+}
+.invisible {
+  display: none;
+}
+
