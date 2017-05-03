@@ -66,17 +66,11 @@ body {
 #zeroButton {
   width: 115px !important;
 }
+.redButton {
+  background-color: #A72D45 !important;
+}
+.redButton:active {
+  background-color: green !important;
+}
 
-#allClear {
-  background-color: #A72D45 !important;
-}
-#allClear:active {
-  background-color: green !important;
-}
-#clearEntry {
-  background-color: #A72D45 !important;
-}
-#clearEntry:active {
-  background-color: green !important;
-}
 
