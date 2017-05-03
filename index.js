@@ -36,15 +36,15 @@ for (var i=0; i<buttons.length; i++) {
        return allClear();
     }
     //IF not number stops adding to entry else adds to entry
-    if (!(Number.isInteger(Number(this.value)))) {
-        entry = "";
-        log += this.value;
-        // input.innerHTML = entry; NO LONGER NEEDED.
-        sumHistory.innerHTML = log;
-    } else {
+    if (Number.isInteger(Number(this.value)) || this.value == ".") {
         entry += this.value;
         log += this.value;
         input.innerHTML = entry;
+        sumHistory.innerHTML = log;
+    } else {
+        entry = "";
+        log += this.value;
+        // input.innerHTML = entry; NO LONGER NEEDED.
         sumHistory.innerHTML = log;
     }
     })
