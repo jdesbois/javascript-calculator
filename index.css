@@ -60,10 +60,7 @@ body {
   font-weight: bold;
   display:inline-block;
 }
-#equalsButton {
-  width: 115px !important;
-}
-#zeroButton {
+.largerBtn {
   width: 115px !important;
 }
 .redButton {
