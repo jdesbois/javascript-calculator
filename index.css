@@ -45,6 +45,9 @@ body {
   background-color: #3E3E3E;
   font-size: 16px;
 }
+#buttons button:active {
+  background-color: green;
+}
 #buttons button:focus {
   outline: none;
 }
@@ -67,7 +70,13 @@ body {
 #allClear {
   background-color: #A72D45 !important;
 }
+#allClear:active {
+  background-color: green !important;
+}
 #clearEntry {
   background-color: #A72D45 !important;
+}
+#clearEntry:active {
+  background-color: green !important;
 }
 
